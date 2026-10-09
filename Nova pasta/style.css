@@ -1,0 +1,90 @@
+.color {
+    color: blueviolet;
+}
+
+.horta {
+    color: green; 
+}
+
+.pagi{
+    color: orange;
+}
+
+.direita{
+    margin-left: 310px;
+}
+
+.up{
+    margin-top: -110px;
+}
+
+.zoom-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden; /* Esconde o que passar do tamanho da caixa */
+  border-radius:  8px;
+}
+
+.zoom-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* Cria a suavidade na animação */
+}
+
+.zoom-container:hover img {
+  transform: scale(2.4); /* Aumenta a imagem em 20% */
+}
+
+a {
+  display: inline-block; /* Permite definir largura, altura e preenchimento */
+  padding: 20px 35px;     /* Aumenta a área interna visível e clicável */
+  text-decoration: none;   /* Opcional: remove o sublinhado */
+}
+
+.seta-piscando {
+    color: red;
+  font-size: 47px;
+  display: inline-block;
+  animation: piscar 1s infinite;    
+
+   
+  transform: translateY(7px);/* Adicione isto para mover 10 pixels para baixo */
+}
+
+@keyframes piscar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.azul{
+    color: rgb(187, 187, 129);
+}
+
+body {
+    background-color: beige;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Exemplo de Media Query para celulares */
+@media screen and (max-width: 768px) {
+  .container {
+    display: block; /* Transforma um layout lado a lado em uma coluna única */
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem; /* Reduz o tamanho da letra no celular */
+  }
+}
